@@ -31,7 +31,7 @@ fn solve_2(s: &str) -> i32 {
     });
     let mut ans = 0;
     for num_a in a {
-        let count_b = b.iter().filter(|&&x| x == num_a).count();
+        let count_b = b.iter().filter(|&x| x == num_a).count();
         ans += num_a * count_b as i32;
     }
     ans
@@ -40,7 +40,7 @@ fn solve_2(s: &str) -> i32 {
 
 fn main() {
     // Part 1
-    let s = fs::read_to_string("input.txt").expect("Unable to read file");
+    let s = fs::read_to_string("input.txt").expect("Make sure that the input file are exists and readable");
     println!("Solve for first question: {}", solve_1(&s));
     println!("Solve for second question: {}", solve_2(&s));
 }
