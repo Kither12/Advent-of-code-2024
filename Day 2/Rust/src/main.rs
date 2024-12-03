@@ -22,13 +22,9 @@ fn solve_1(s: &str) -> i32 {
         }
         ans += 1;
         
-    }
-    
+    }    
     ans 
 }
-
-
-
 
 
 fn solve_2(s: &str) -> i32 {
@@ -44,8 +40,10 @@ fn solve_2(s: &str) -> i32 {
         if !(a.is_sorted_by_key(|x| -x) || a.is_sorted()) {
             return false;
         } 
-        
-        return a.windows(2).any(|x| (1..=3).contains(&(x[0] - x[1]).abs()) == false) == false
+        // windows acting as a sliding windows, it's returns all consecutives with given size.
+        return a.windows(2) 
+                .any(|x| (1..=3) .contains(&(x[0] - x[1]).abs()) == false) 
+                == false
         
     }
     for x in lines {
