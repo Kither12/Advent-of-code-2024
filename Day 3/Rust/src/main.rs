@@ -1,5 +1,8 @@
 use std::fs;
 
+// Remember to add the regex crate to Cargo.toml
+// or just use cargo add regex
+// Link info about regex crate: https://crates.io/crates/regex
 use regex::Regex;
 
 
