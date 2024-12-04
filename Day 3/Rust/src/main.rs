@@ -21,7 +21,6 @@ fn solve_1(s: &str) -> i128{
 fn solve_2(s: &str) -> i128{
     // Padding the first "do()" to make the code works
     let s = "do()".to_string() + s;
-
     let mut ans: i128 = 0;
     let re = Regex::new(r"mul\((\d+),(\d+)\)").unwrap();
     let arr = s.split("don\'t()").collect::<Vec<&str>>();
