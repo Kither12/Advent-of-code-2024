@@ -1,4 +1,6 @@
 *.txt
+*.hi
+*.o
 target
 Cargo.lock
 Cargo.toml
