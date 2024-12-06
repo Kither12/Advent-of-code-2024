@@ -13,3 +13,9 @@ We welcome contributions in any programming language! Here's how you can contrib
 3. **Better Solutions**: If you want to submit a solution in a language that's already implemented:
    - Clearly explain why your solution is better (performance, readability, etc.)
    - The community will review and decide if it should replace the existing solution.
+
+## Contributors
+
+<a href="https://github.com/Kither12/Advent-of-code-2024/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=Kither12/Advent-of-code-2024&max=750&columns=20" />
+</a>
