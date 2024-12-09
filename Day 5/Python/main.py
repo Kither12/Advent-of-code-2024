@@ -32,7 +32,6 @@ def fix(nums, cmp):
             if cmp[nums[i]][nums[j]] == -1:
                 nums[i], nums[j] = nums[j], nums[i]
     
-
 def check(nums, cmp):
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
@@ -41,8 +40,10 @@ def check(nums, cmp):
     return True
 
 def solve_2(lines, id):
-    edges = []
-    n = 0
+    """
+    Note: i didn't know we were given a complete graph, so i tried topo approach at first, later on i changed it into a simple sorting approach
+    The input wasn't that long so i can use bubble sort for simplicity.
+    """
     cmp = [[0 for i in range(100)] for i in range(100)]
     for rules in lines[:id]:
         a, b = map(int, rules.split('|'))
