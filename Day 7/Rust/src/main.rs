@@ -2,7 +2,6 @@ use std::fs::File;
 use std::io::{self, BufRead};
 use std::sync::{Arc, Mutex};
 use std::thread;
-use std::cmp::max;
 
 
 fn solve_1() {
@@ -45,6 +44,10 @@ fn solve_1() {
     }
     println!("The sum is: {}", *sum.lock().unwrap());
 }
+
+/// i have an idea but Rust is preventing me from implementing it
+/// I will try to implement it in Python
+
 
 fn main() -> io::Result<()> {
     
