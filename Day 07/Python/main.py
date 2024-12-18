@@ -32,6 +32,7 @@ def solve_2(ar):
         a = list(map(mpz, a.split()))
         n = len(a)
         len_a = [len(str(x)) for x in a]
+        
         # to be honest, we could use branch and bound here
         # but i'm lazy to implement that shiet in Python (due to it's nature of recursion)
         for mask in range(3**n):

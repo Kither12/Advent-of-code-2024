@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.OUT": "plaintext",
+        "iosfwd": "cpp"
+    }
+}
