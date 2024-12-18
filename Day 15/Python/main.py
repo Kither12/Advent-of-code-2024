@@ -130,7 +130,7 @@ def solve_2(ar, q):
         for tmp in ar:
             print(''.join(tmp))
     score = 0
-    for i in range(len(ar)):
+    for i in range(len(ar)):    
         for j in range(len(ar[0])):
             if (ar[i][j] == '['):
                 score += 100 * i + j
