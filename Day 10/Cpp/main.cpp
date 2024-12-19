@@ -112,7 +112,6 @@ int solve_2(ifstream &inp, int R, int C) {
 int main() {
     ifstream inp("sample.txt");
     ifstream inp2("sample.txt");
-
     cout << solve_1(inp, 8, 8) << '\n';
     cout << solve_2(inp2, 8, 8) << '\n';
     inp.close();
