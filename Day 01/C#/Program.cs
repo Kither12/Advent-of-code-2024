@@ -21,15 +21,25 @@
         var asSorted = a.OrderBy(x => x).ToList();
         var bsSorted = b.OrderBy(x => x).ToList();
 
-        // Calculate the answer
-        int ans = 0;
+        // Calculate the Part 1 answer
+        int ans1 = 0;
         for (int i = 0; i < asSorted.Count; i++)
         {
             int tmp = Math.Abs(asSorted[i] - bsSorted[i]);
-            ans += tmp;
+            ans1 += tmp;
         }
 
+        // Calculate the Part 2 answer
+        int ans2 = 0;
+        foreach (var numA in a)
+        {
+            int countB = b.Count(x => x == numA);
+            ans2 += numA * countB;
+        }
+
+
         // Output the result
-        Console.WriteLine(ans);
+        Console.WriteLine(ans1);
+        Console.WriteLine(ans2);
     }
 }
