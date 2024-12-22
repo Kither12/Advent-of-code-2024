@@ -17,5 +17,5 @@ We welcome contributions in any programming language! Here's how you can contrib
 ## Contributors
 
 <a href="https://github.com/Kither12/Advent-of-code-2024/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Kither12/Advent-of-code-2024&max=750&columns=20" />
+  <img src="https://contributors-img.web.app/image?repo=Kither12/Advent-of-code-2024" />
 </a>
